@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+html.dark {
+  color-scheme: dark;
+  --canvas: #121214;
+  --surface: #18181B;
+  --elevated: #1E1E24;
+  --rail: #09090B;
+  --border: #27272A;
+  --border-strong: #3F3F46;
+  --text-primary: #FAFAFA;
+  --text-secondary: #A1A1AA;
+  --text-muted: #71717A;
+  --text-faint: #52525B;
+  --nav-active-bg: rgba(99, 102, 241, 0.15);
+  --nav-active-text: #818CF8;
+  --popover-bg: #1E1E24;
+  --toast-bg: #18181B;
+  --toast-border: #27272A;
+  --toast-text: #FAFAFA;
+  --input-bg: rgba(24, 24, 27, 0.5);
+  --hover-bg: rgba(39, 39, 42, 0.4);
+  --hover-bg-strong: #27272A;
+  --overlay-bg: rgba(0, 0, 0, 0.6);
+  --button-border: #27272A;
+  --button-hover-bg: #27272A;
+  --accent-bg: rgba(99, 102, 241, 0.1);
+  --accent-border: rgba(99, 102, 241, 0.2);
+  --slate-50: #FAFAFA;
+  --slate-100: #F4F4F5;
+  --slate-200: #E4E4E7;
+  --slate-300: #D4D4D8;
+  --slate-400: #A1A1AA;
+  --slate-500: #71717A;
+  --slate-600: #52525B;
+  --slate-700: #3F3F46;
+  --slate-800: #27272A;
+  --slate-900: #18181B;
+  --slate-950: #09090B;
+  --avatar-default-bg: rgba(82, 82, 91, 0.2);
+  --avatar-default-text: #D4D4D8;
+}
+
+html.light {
+  color-scheme: light;
+  --canvas: #F8FAFC;
+  --surface: #FFFFFF;
+  --elevated: #FFFFFF;
+  --rail: #F1F5F9;
+  --border: #E2E8F0;
+  --border-strong: #CBD5E1;
+  --text-primary: #0F172A;
+  --text-secondary: #475569;
+  --text-muted: #64748B;
+  --text-faint: #94A3B8;
+  --nav-active-bg: rgba(99, 102, 241, 0.10);
+  --nav-active-text: #4F46E5;
+  --popover-bg: #FFFFFF;
+  --toast-bg: #1E293B;
+  --toast-border: #334155;
+  --toast-text: #F8FAFC;
+  --input-bg: #F8FAFC;
+  --hover-bg: #F1F5F9;
+  --hover-bg-strong: #E2E8F0;
+  --overlay-bg: rgba(15, 23, 42, 0.4);
+  --button-border: #E2E8F0;
+  --button-hover-bg: #F1F5F9;
+  --accent-bg: rgba(99, 102, 241, 0.06);
+  --accent-border: rgba(99, 102, 241, 0.15);
+  --slate-50: #0F172A;
+  --slate-100: #1E293B;
+  --slate-200: #334155;
+  --slate-300: #475569;
+  --slate-400: #64748B;
+  --slate-500: #94A3B8;
+  --slate-600: #94A3B8;
+  --slate-700: #CBD5E1;
+  --slate-800: #E2E8F0;
+  --slate-900: #F1F5F9;
+  --slate-950: #F8FAFC;
+  --avatar-default-bg: rgba(100, 116, 139, 0.15);
+  --avatar-default-text: #475569;
+}
+
+body {
+  margin: 0;
+  background: var(--canvas);
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--slate-400);
+  border-radius: 4px;
+}
+
+.shimmer-bg {
+  background: linear-gradient(
+    90deg,
+    rgba(99, 102, 241, 0) 0%,
+    rgba(99, 102, 241, 0.18) 50%,
+    rgba(99, 102, 241, 0) 100%
+  );
+  background-size: 200% 100%;
+}
